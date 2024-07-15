@@ -23,7 +23,6 @@ print(f'prediction before training: f(5) = {model(X_test).item():.3f}')
 
 for epoch in range(n_iter):
     y_pred = model(X_train)
-    # c = cost(Y, y_pred)
     l = loss(Y_train, y_pred)
  
     l.backward()    # no return!!
